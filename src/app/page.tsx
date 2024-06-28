@@ -72,7 +72,12 @@ export default function Home() {
   return (
     <main>
       <Grid>
-        <Grid.Col span={7} offset={2} h="100vh" px={"24px"}>
+        <Grid.Col
+          span={{ sm: 12, md: 7 }}
+          offset={{ sm: 0, md: 2 }}
+          h="100vh"
+          px={"24px"}
+        >
           <Stack h={"100%"}>
             <Stack
               flex={1}
@@ -103,7 +108,7 @@ export default function Home() {
                       )}
                       <Stack
                         bg={"gray.3"}
-                        w="50%"
+                        w={{ xs: "100%", sm: "50%" }}
                         p="md"
                         gap={"xs"}
                         style={{
@@ -130,7 +135,7 @@ export default function Home() {
                       key={i}
                       bg={"blue.7"}
                       p="md"
-                      w="50%"
+                      w={{ xs: "100%", sm: "50%" }}
                       gap={"xs"}
                       style={{ borderRadius: "10px", alignSelf: "end" }}
                     >
@@ -176,7 +181,7 @@ export default function Home() {
             </Box>
           </Stack>
         </Grid.Col>
-        <Grid.Col span={3} p={"lg"}>
+        <Grid.Col span={3} p={"lg"} visibleFrom="md">
           <Stack gap={"md"}>
             {messages.length > 1 && (
               <Box>

@@ -75,7 +75,7 @@ export default function Home() {
         <Grid.Col
           span={{ sm: 12, md: 7 }}
           offset={{ sm: 0, md: 2 }}
-          h="100vh"
+          h="100dvh"
           px={"24px"}
         >
           <Stack h={"100%"}>
